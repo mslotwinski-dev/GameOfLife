@@ -10,9 +10,9 @@ func Display(i [][]bool) {
 	for _, j := range i {
 		for _, k := range j {
 			if k {
-				fmt.Print("█")
+				fmt.Print("██")
 			} else {
-				fmt.Print(" ")
+				fmt.Print("  ")
 			}
 		}
 		fmt.Println()
@@ -63,7 +63,7 @@ func main() {
 
 	for i := range board {
 		for j := range board[i] {
-			board[i][j] = rand.Float64() > 0.8
+			board[i][j] = rand.Float64() > 0.5
 		}
 	}
 
